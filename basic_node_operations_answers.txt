@@ -1,0 +1,31 @@
+1. Run the commands sort, wc and uniq on the commands.js file. Explain how they work and what the output was.
+
+Sort shows the files lines sorted alphabetically, line by line. The lines are grouped together, with the most
+indented lines starting at the top of the sort. wc shows the newline, word, and byte count for the file. Output
+was 76 156 1740.  uniq shows lines that are not repeated in a file, it filters them out. Output was all file
+lines displayed.
+
+
+2. Using the pipe (|) connect at least two commands and run it on commands.js. Explain what the output was and
+why the specific data was outputted.
+
+cat bash.js | wc
+Displays the line, word, byte count of the file contents. Running wc bash.js will show the same numbers. This is
+because the cat command outputs the contents of the bash file, then pipes it to the wc command. Similarly,
+echo bash.js | wc shows the word, line, and byte count of the string 'bash.js'.
+
+
+
+6.
+
+function reverseString(inputString) {
+
+  var splitString = inputString.split("").reverse().join("").split(" ");
+
+  var reversedString = splitString.reverse().join(" ");
+
+  console.log(reversedString);
+
+}
+
+reverseString("On the road until Friday")
